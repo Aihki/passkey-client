@@ -3,10 +3,10 @@ import { User } from '@sharedTypes/DBTypes';
 import { LoginResponse, UserResponse } from '@sharedTypes/MessageTypes';
 import { startAuthentication, startRegistration } from '@simplewebauthn/browser';
 import { PublicKeyCredentialCreationOptionsJSON, PublicKeyCredentialRequestOptionsJSON } from '@simplewebauthn/types';
-// TODO: add imports for WebAuthn functions
+// imports for WebAuthn functions
 
 const useUser = () => {
-  // TODO: implement network functions for auth server user endpoints
+  // implement network functions for auth server user endpoints
   const getUserByToken = async (token: string) => {
     const options = {
       headers: {
