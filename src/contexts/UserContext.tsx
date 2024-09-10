@@ -31,11 +31,12 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   const handleRegister = async (user: UserWithNoPassword) => {
-    // TODO implement register function
+    // implement register function | save user data temporary
+    setRegisterResult(user);
   };
 
   const handleLogout = useCallback(() => {
-    try {
+    try { 
       // remove token from local storage
       localStorage.removeItem('token');
       // set user to null
